@@ -1,3 +1,8 @@
+
+#import <Foundation/Foundation.h>
+#import <Security/Security.h>
+#import <UIKit/UIKit.h>
+
 void setKeychainValue(const char* key, const char* value, const char* accessGroup) {
     // Convert C strings to NSString
     NSString *keyString = [NSString stringWithUTF8String:key];
@@ -27,6 +32,6 @@ void setKeychainValue(const char* key, const char* value, const char* accessGrou
     if (status != errSecSuccess) {
         NSLog(@"Error setting Keychain value: %d", (int)status);
     } else {
-        NSLog(@"Keychain value sucessfully set");
+        NSLog(@"Keychain value successfully set");
     }
 }
