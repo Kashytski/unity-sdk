@@ -34,7 +34,6 @@ public class PostBuildIosScript
       "merchant.games.galactica.linq-3",
     });
 
-    
     manager.AddKeychainSharing(new string[]
     {
       "$(AppIdentifierPrefix)games.galactica.linq.stg.shared",
